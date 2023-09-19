@@ -7,7 +7,7 @@ eg：
 
 生成base64格式的注入器直接执行即可
 
-`java-memshell-generator-release最新版本Suo5生成代码有bug，会把网站打崩，请自己写加载器或等待pen4uin师傅更新后使用`
+`jMG v1.0.6的Suo5生成代码有bug，会把网站打崩，请自己写加载器或等待pen4uin师傅更新后使用`
 
 ![图片](https://github.com/1ucky7/GodzillaPluge-codeExec/assets/145323730/3ca837b0-cd5d-4b91-a228-7023175393d5)
 
