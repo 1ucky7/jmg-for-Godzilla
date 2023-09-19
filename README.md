@@ -1,7 +1,8 @@
 # GodzillaPluge-codeExec
 Godzilla插件|内存马|Suo5内存代理
 
-   之前写了一个注入suo5的哥斯拉插件，在适配其他中间件的时候遇到一些问题，后面看到`pen4uin`师傅写了一个生成各种马以及suo5代理的工具（https://github.com/pen4uin/java-memshell-generator-release），于是直接给哥斯拉加了一个接口执行代码，方便注入其他管理工具内存马，或注入内存代理。
+   之前写了一个注入suo5的哥斯拉插件，在适配其他中间件的时候遇到一些问题，后面看到`pen4uin`师傅写了一个生成各种马以及suo5代理的工具，于是直接给哥斯拉加了一个接口执行代码，方便注入其他管理工具内存马，或注入内存代理。
+  jMG： https://github.com/pen4uin/java-memshell-generator-release
 
 eg：
 
