@@ -1,25 +1,50 @@
-# GodzillaPluge-codeExec
-Godzilla插件|内存马|Suo5内存代理
+# jmg for Godzilla
+Godzilla插件|内存马|Suo5内存代理｜jmg for Godzilla
 
-   之前写了一个注入suo5的哥斯拉插件，在适配其他中间件的时候遇到一些问题，后面看到`pen4uin`师傅写了一个生成各种马以及suo5代理的工具，于是直接给哥斯拉加了一个接口执行代码，方便注入其他管理工具内存马，或注入内存代理。
-  jMG： https://github.com/pen4uin/java-memshell-generator-release
+得益于`pen4uin`的jmg项目开源，可以把payload生成功能集成到插件中了，相比复制过来执行简化了操作
+jMG： https://github.com/pen4uin/java-memshell-generator-release
 
-eg：
+```
+支持注入工具："Behinder", "Godzilla", "AntSword", "Suo5", "NeoreGeorg"
 
-生成base64格式的注入器直接执行即可
+支持中间件："Tomcat", "SpringMVC", "Weblogic", "Websphere", "Resin", "Undertow", "Jetty", "JBoss", "Glassfish"
 
-`jMG v1.0.6的Suo5生成代码有bug，会把网站打崩，请自己写加载器或等待pen4uin师傅更新后使用`
+支持注入类型："Listener", "Filter", "Interceptor"
+```
 
-![图片](https://github.com/1ucky7/GodzillaPluge-codeExec/assets/145323730/3ca837b0-cd5d-4b91-a228-7023175393d5)
+部分测试：
+```
+中间件：Jetty
+注入工具：Godzilla 内存马
+注入类型：Filter
+```
+<img width="1012" alt="image" src="https://github.com/1ucky7/GodzillaPluge-codeExec/assets/145323730/7a898df8-29f9-498b-8035-2a98bc7e5efa">
 
+```
+中间件：Jetty
+注入工具：Suo5 内存代理
+注入类型：Filter
+```
+<img width="1103" alt="image" src="https://github.com/1ucky7/GodzillaPluge-codeExec/assets/145323730/cec48da0-db3f-41dc-a78f-e536eb93c331">
 
-可以看到filter已经打上了，且代理连接成功
+```
+中间件：Tomcat
+注入工具：Godzilla 内存马
+注入类型：Listener
+```
+<img width="1174" alt="image" src="https://github.com/1ucky7/GodzillaPluge-codeExec/assets/145323730/ea7911bc-591a-4fec-8ea5-d9d95c4db198">
 
-![图片](https://github.com/1ucky7/GodzillaPluge-codeExec/assets/145323730/2c6a6b48-566f-44f6-83d1-fbab4f39977f)
+```
+中间件：Tomcat
+注入工具：Godzilla 内存马
+注入类型：Filter
+```
+<img width="1259" alt="image" src="https://github.com/1ucky7/GodzillaPluge-codeExec/assets/145323730/7dc9efcb-4686-47cd-aec0-0527ee52e3d7">
 
-
-![图片](https://github.com/1ucky7/GodzillaPluge-codeExec/assets/145323730/1482cf04-4fd0-495d-83c5-cab38abeadb6)
+作者是懒b，简单测试了一下，插件本身就是jmg做了一下适配，感谢`pen4uin`师傅的开源
 
 **免责声明**
 
 该工具仅适用于在授权环境/测试环境进行使用，请勿用于生产环境。
+
+
