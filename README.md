@@ -2,6 +2,7 @@
 Godzilla插件|内存马|Suo5内存代理｜jmg for Godzilla
 
 得益于`pen4uin`的jmg项目开源，可以把payload生成功能集成到插件中了，相比复制过来执行简化了操作
+
 jMG： https://github.com/pen4uin/java-memshell-generator-release
 
 ```
